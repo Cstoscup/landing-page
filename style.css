@@ -155,3 +155,10 @@ button {
     height: 40px;
     margin-top: 23px;
 }
+
+footer {
+    padding: 40px 0;
+    color: #E5E7EB;
+    text-align: center;
+    font-size: 18px;
+}
