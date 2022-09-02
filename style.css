@@ -8,14 +8,24 @@ body {
 }
 
 .hero-and-header, .description {
-    padding: 20px 200px;
+    padding: 20px 0;
 }
 
 header {
     display: flex;
     flex-direction: row;
-    gap: 20px;
     align-items: center;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.menu-links {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-links a:hover {
+    text-decoration: underline;
 }
 
 header a, .hero-secondary {
@@ -33,8 +43,8 @@ header a, .hero-secondary {
 
 .hero {
     display: flex;
-    margin-top: 140px;
-    margin-bottom: 140px;
+    max-width: 70%;
+    margin: 140px auto;
 }
 
 .hero-left {
@@ -178,10 +188,18 @@ footer {
     .quote-text {
         font-size: 30px;
     }
+    header {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
 }
 
 @media (max-width: 700px) {
     .contact-section {
+        max-width: 80%;
+    }
+    header {
         max-width: 80%;
     }
 }
