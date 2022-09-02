@@ -60,7 +60,6 @@ button {
     color: #F9FAF8;
     border: 1px solid #3882F6;
     border-radius: 7px;
-    padding: 8px 30px;
     font-size: 16px;
     width: 120px;
     height: 40px;
@@ -126,19 +125,20 @@ button {
 .contact-section {
     background-color: #3882F6;
     display: flex;
-    justify-content: center;
-    gap: 150px;
-    margin: 100px 200px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px auto;
+    max-width: 70%;
     border: 1px solid #3882F6;
     border-radius: 10px;
-    padding: 50px 25px;
+    padding: 30px;
 }
 
 .contact-section-header {
     color:#F9FAF8;
     font-size: 24px;
     font-weight: bold;
-    margin: 0;
 }
 
 .contact-section-description {
@@ -149,11 +149,9 @@ button {
 .contact-section button {
     border: 2px solid #E5E7EB;
     border-radius: 7px;
-    padding: 8px 30px;
     font-size: 16px;
     width: 120px;
     height: 40px;
-    margin-top: 23px;
 }
 
 footer {
@@ -161,4 +159,17 @@ footer {
     color: #E5E7EB;
     text-align: center;
     font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+    .contact-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact-section {
+        max-width: 80%;
+    }
 }
