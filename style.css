@@ -183,6 +183,21 @@ footer {
     font-size: 18px;
 }
 
+.icon-link {
+    padding: 5px;
+    margin: 0 10px 10px;
+    border-radius: 50%;
+    color: #E5E7EB;
+    border: 10px solid #E5E7EB;
+    outline: 1px solid #E5E7EB;
+    transition: all 150ms ease-in-out;
+}
+
+.icon-link:hover {
+    border: 10px solid #1F2937;
+    transition: all 150ms ease-in-out;
+}
+
 @media (max-width: 1000px) {
     .contact-section {
         flex-direction: column;
