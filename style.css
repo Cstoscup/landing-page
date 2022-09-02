@@ -7,7 +7,7 @@ body {
     background-color: #1F2937;
 }
 
-.hero-and-header {
+.hero-and-header, .description {
     padding: 20px 200px;
 }
 
@@ -44,8 +44,8 @@ header a, .hero-secondary {
 }
 
 .hero-right img {
-    border: 2px solid #F9FAF8;
-    border-radius: 4px;
+    border: 4px solid #3882F6;
+    border-radius: 10px;
 }
 
 .hero-main {
@@ -63,4 +63,95 @@ button {
     padding: 8px 30px;
     font-size: 16px;
     width: 120px;
+    height: 40px;
+}
+
+.description {
+    padding-bottom: 70px;
+}
+
+.description-heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1F2937;
+}
+
+.images-and-captions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.image-and-caption {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 260px;
+}
+
+.images-and-captions img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid #3882F6;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.images-and-captions p {
+    text-align: center;
+}
+
+.quote-section {
+    background-color: #E5E7EB;
+    padding: 100px 350px;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1F2937;
+}
+
+.quote-author {
+    text-align: right;
+    font-weight: bold;
+    color: #1F2937;
+    font-size: 24px;
+}
+
+.contact-section {
+    background-color: #3882F6;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin: 100px 200px;
+    border: 1px solid #3882F6;
+    border-radius: 10px;
+    padding: 50px 25px;
+}
+
+.contact-section-header {
+    color:#F9FAF8;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.contact-section-description {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.contact-section button {
+    border: 2px solid #E5E7EB;
+    border-radius: 7px;
+    padding: 8px 30px;
+    font-size: 16px;
+    width: 120px;
+    height: 40px;
+    margin-top: 23px;
 }
